@@ -1,0 +1,27 @@
+  #wrapper {
+    width: 100%;
+    position: relative;
+  }
+  #carousel {
+    width: calc(100% - 60px);
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-left: 60px;
+  }
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  #content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .item {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
